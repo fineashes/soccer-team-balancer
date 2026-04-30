@@ -186,66 +186,67 @@
         // Load players data (embedded for GitHub Pages)
         function loadPlayersData() {
             playersData = [
-                {name: "Ashok Shrestha", position: "S", secondaryPosition: "M", seed: 1},
-                {name: "Rajeeb", position: "S", secondaryPosition: "M", seed: 2},
-                {name: "Bigyan", position: "D", secondaryPosition: "", seed: 1},
-                {name: "Sujit Shrestha", position: "D", secondaryPosition: "", seed: 3},
-                {name: "Pawan", position: "M", secondaryPosition: "D", seed: 3},
-                {name: "Suresh", position: "D", secondaryPosition: "", seed: 1},
-                {name: "Rupesh", position: "D", secondaryPosition: "", seed: 3},
-                {name: "Daulat Sharma", position: "S", secondaryPosition: "", seed: 1},
-                {name: "Madan Neupane", position: "S", secondaryPosition: "", seed: 1},
-                {name: "Mohan Sapkota", position: "M", secondaryPosition: "", seed: 2},
-                {name: "Ashish Hada", position: "M", secondaryPosition: "D", seed: 1},
-                {name: "Nirajan karki", position: "M", secondaryPosition: "S", seed: 3},
-                {name: "Sabin Khadka", position: "S", secondaryPosition: "", seed: 1},
-                {name: "Naren", position: "M", secondaryPosition: "S", seed: 3},
-                {name: "Prabin D Karki", position: "D", secondaryPosition: "", seed: 1},
-                {name: "Prabin", position: "M", secondaryPosition: "", seed: 3},
-                {name: "Unnati Ojha", position: "S", secondaryPosition: "M", seed: 2},
-                {name: "Jeevan Neupane", position: "M", secondaryPosition: "", seed: 2},
-                {name: "Deepak Bhandari", position: "D", secondaryPosition: "", seed: 3},
-                {name: "Paurash", position: "D", secondaryPosition: "", seed: 3},
-                {name: "MKD", position: "D", secondaryPosition: "", seed: 2},
-                {name: "SD", position: "M", secondaryPosition: "D", seed: 2},
-                {name: "Santos", position: "M", secondaryPosition: "", seed: 3},
-                {name: "Rabin", position: "S", secondaryPosition: "", seed: 3},
-                {name: "Samji", position: "S", secondaryPosition: "M", seed: 3},
-                {name: "Bikas Sapkota", position: "M", secondaryPosition: "", seed: 3},
-                {name: "Roshan Baral", position: "D", secondaryPosition: "", seed: 3},
-                {name: "Dinesh", position: "D", secondaryPosition: "", seed: 1},
-                {name: "Nick", position: "S", secondaryPosition: "", seed: 4},
-                {name: "Risi", position: "D", secondaryPosition: "", seed: 1},
-                {name: "Paco", position: "M", secondaryPosition: "D", seed: 4},
-                {name: "Janesh", position: "M", secondaryPosition: "S", seed: 3},
-                {name: "Anup", position: "M", secondaryPosition: "S", seed: 3},
-                {name: "Shyam Kandel", position: "D", secondaryPosition: "", seed: 2},
-                {name: "Subesh", position: "D", secondaryPosition: "", seed: 1},
-                {name: "Robbie M", position: "D", secondaryPosition: "", seed: 3},
-                {name: "Arun", position: "S", secondaryPosition: "M", seed: 3},
-                {name: "Pradip Poudel", position: "S", secondaryPosition: "", seed: 2},
-                {name: "Amrit Joshi", position: "M", secondaryPosition: "", seed: 1},
-                {name: "Aakash Thapa", position: "D", secondaryPosition: "", seed: 3},
-                {name: "Shekhar", position: "M", secondaryPosition: "", seed: 2},
-                {name: "Dadin Pandey", position: "D", secondaryPosition: "", seed: 1},
-                {name: "Pravin B", position: "D", secondaryPosition: "", seed: 3},
-                {name: "Maddan P.", position: "S", secondaryPosition: "", seed: 3},
-                {name: "Ashish Parajuli", position: "D", secondaryPosition: "", seed: 2},
-                {name: "Ujjwal Bhattarai", position: "D", secondaryPosition: "", seed: 1},
-                {name: "Santosh", position: "D", secondaryPosition: "", seed: 1},
-                {name: "Steve", position: "S", secondaryPosition: "", seed: 3},
-                {name: "Sushir", position: "D", secondaryPosition: "", seed: 1},
-                {name: "Ujwal", position: "M", secondaryPosition: "", seed: 2},
-                {name: "Anjan", position: "S", secondaryPosition: "", seed: 3},
-                {name: "Ashok", position: "S", secondaryPosition: "", seed: 1},
-                {name: "Biswa Bhattarai", position: "D", secondaryPosition: "", seed: 1},
-                {name: "Manoj Pokharel", position: "D", secondaryPosition: "", seed: 3},
-                {name: "Mohan Adhikari", position: "M", secondaryPosition: "", seed: 2},
-                {name: "Nischal", position: "D", secondaryPosition: "", seed: 2},
-                {name: "Tenzing", position: "D", secondaryPosition: "", seed: 2},
-                {name: "Utsav", position: "D", secondaryPosition: "", seed: 2},
-                {name: "Uttam", position: "D", secondaryPosition: "", seed: 1},
-                {name: "Yogesh", position: "S", secondaryPosition: "", seed: 3}
+                {name: "Ashok Shrestha", aliases: [], position: "S", secondaryPosition: "M", seed: 1},
+                {name: "Rajeeb", aliases: [], position: "S", secondaryPosition: "M", seed: 2},
+                {name: "Bigyan", aliases: [], position: "D", secondaryPosition: "", seed: 1},
+                {name: "Sujit Shrestha", aliases: ["Sujit"], position: "D", secondaryPosition: "", seed: 3},
+                {name: "Pawan", aliases: [], position: "M", secondaryPosition: "D", seed: 3},
+                {name: "Suresh", aliases: [], position: "D", secondaryPosition: "", seed: 1},
+                {name: "Rupesh", aliases: ["Rupesh Uprety"], position: "D", secondaryPosition: "", seed: 3},
+                {name: "Daulat Sharma", aliases: [], position: "S", secondaryPosition: "", seed: 1},
+                {name: "Madan Neupane", aliases: [], position: "S", secondaryPosition: "", seed: 1},
+                {name: "Mohan Sapkota", aliases: [], position: "M", secondaryPosition: "", seed: 2},
+                {name: "Ashish Hada", aliases: ["Ashish"], position: "M", secondaryPosition: "D", seed: 1},
+                {name: "Nirajan karki", aliases: [], position: "M", secondaryPosition: "S", seed: 3},
+                {name: "Sabin Khadka", aliases: ["Sabin", "Sabin Khad", "Sabin"], position: "S", secondaryPosition: "", seed: 1},
+                {name: "Naren", aliases: ["Naren Thapa"], position: "M", secondaryPosition: "S", seed: 3},
+                {name: "Prabin D Karki", aliases: [], position: "D", secondaryPosition: "", seed: 1},
+                {name: "Prabin", aliases: ["Sabin Rai"], position: "M", secondaryPosition: "", seed: 3},
+                {name: "Unnati Ojha", aliases: ["Unnati Bro"], position: "S", secondaryPosition: "M", seed: 2},
+                {name: "Jeevan Neupane", aliases: [], position: "M", secondaryPosition: "", seed: 2},
+                {name: "Deepak Bhandari", aliases: [], position: "D", secondaryPosition: "", seed: 3},
+                {name: "Paurash", aliases: [], position: "D", secondaryPosition: "", seed: 3},
+                {name: "MKD", aliases: ["Ankit", "Ankit Dahal"], position: "D", secondaryPosition: "", seed: 2},
+                {name: "SD", aliases: ["Sree", "Sri"], position: "M", secondaryPosition: "D", seed: 2},
+                {name: "Santos", aliases: ["Dr Santos"], position: "M", secondaryPosition: "", seed: 3},
+                {name: "Rabin", aliases: [], position: "S", secondaryPosition: "", seed: 3},
+                {name: "Samji", aliases: ["Samji Sir", "Samiji", "Samiji Sir"], position: "S", secondaryPosition: "M", seed: 3},
+                {name: "Bikas Sapkota", aliases: ["bikas"], position: "M", secondaryPosition: "", seed: 3},
+                {name: "Roshan Baral", aliases: [], position: "D", secondaryPosition: "", seed: 3},
+                {name: "Dinesh", aliases: ["Dinesh Siwakoti"], position: "D", secondaryPosition: "", seed: 1},
+                {name: "santosh", aliases: [], position: "S", secondaryPosition: "", seed: 4},
+                {name: "Risi", aliases: [], position: "D", secondaryPosition: "", seed: 1},
+                {name: "Paco", aliases: [], position: "M", secondaryPosition: "D", seed: 4},
+                {name: "Janesh", aliases: ["Janesh devkota"], position: "M", secondaryPosition: "S", seed: 3},
+                {name: "Anup", aliases: ["Anup Aryal"], position: "M", secondaryPosition: "S", seed: 3},
+                {name: "Shyam Kandel", aliases: [], position: "D", secondaryPosition: "", seed: 2},
+                {name: "Subesh", aliases: [], position: "D", secondaryPosition: "", seed: 1},
+                {name: "Robbie M", aliases: ["Robbie", "Ravi"], position: "D", secondaryPosition: "", seed: 3},
+                {name: "Arun", aliases: [], position: "S", secondaryPosition: "M", seed: 3},
+                {name: "Pradip Poudel", aliases: [], position: "S", secondaryPosition: "", seed: 2},
+                {name: "Amrit Joshi", aliases: [], position: "M", secondaryPosition: "", seed: 1},
+                {name: "Aakash Thapa", aliases: [], position: "D", secondaryPosition: "", seed: 3},
+                {name: "Shekhar", aliases: [], position: "M", secondaryPosition: "", seed: 2},
+                {name: "Dadin Pandey", aliases: [], position: "D", secondaryPosition: "", seed: 1},
+                {name: "Pravin B", aliases: [], position: "D", secondaryPosition: "", seed: 3},
+                {name: "Maddan P.", aliases: ["Madan Pun"], position: "S", secondaryPosition: "", seed: 3},
+                {name: "Aashish Parajuli", aliases: ["Ashish Parajuli"], position: "D", secondaryPosition: "", seed: 2},
+                {name: "Ujjwal Bhattarai", aliases: ["Ee Ujjwal Bhattarai"], position: "D", secondaryPosition: "", seed: 1},
+                {name: "Santosh", aliases: ["Santosh Acharya"], position: "D", secondaryPosition: "", seed: 1},
+                {name: "Steve", aliases: ["Steve Poudyal", "Steve Poudel"], position: "S", secondaryPosition: "", seed: 3},
+                {name: "Sushir", aliases: [], position: "D", secondaryPosition: "", seed: 1},
+                {name: "Ujwal", aliases: [], position: "M", secondaryPosition: "", seed: 2},
+                {name: "Anjan", aliases: [], position: "S", secondaryPosition: "", seed: 3},
+                {name: "Ashok", aliases: [], position: "S", secondaryPosition: "", seed: 1},
+                {name: "Biswa Bhattarai", aliases: [], position: "D", secondaryPosition: "", seed: 1},
+                {name: "Manoj Pokharel", aliases: [], position: "D", secondaryPosition: "", seed: 3},
+                {name: "Mohan Adhikari", aliases: [], position: "M", secondaryPosition: "", seed: 2},
+                {name: "Nischal", aliases: [], position: "D", secondaryPosition: "", seed: 2},
+                {name: "Tenzing", aliases: [], position: "D", secondaryPosition: "", seed: 2},
+                {name: "Utsav", aliases: [], position: "D", secondaryPosition: "", seed: 2},
+                {name: "Uttam", aliases: [], position: "D", secondaryPosition: "", seed: 1},
+                {name: "Yogesh", aliases: [], position: "S", secondaryPosition: "", seed: 3},
+                {name: "Nirod", aliases: [], position: "S", secondaryPosition: "", seed: 1}
             ];
             console.log('Loaded players:', playersData.length, 'players');
         }
@@ -354,22 +355,13 @@
                 /wifi|signal|battery|%/i,
                 /^[^\w\s]+$/,
                 /^(o|O|0|l|I|\|)+$/,
-                /[@&)(]+/,
                 /\bFT\b|\ball\b/i,
-                /®/,
-                /°/,
                 /^hg$/i,
-                /\binfo\b/i,
-                /\bbro\b/i,
-                /\bsir\b/i,
                 /^<\s/,
-                /\s<\s/,
-                /\s0$/,
-                /^0\s/,
-                /\s0\s/
+                /\s<\s/
             ];
             
-            const skipWords = ['votes', 'voted', 'done', 'vote', 'by', 'at', 'on', 'am', 'pm'];
+            const skipWords = ['votes', 'voted', 'done', 'vote', 'by', 'at', 'on', 'am', 'pm', 'info', 'nfo'];
             const ocrArtifacts = /^(py|o|O|0|l|I|\||\s|\.)+/i;
             
             for (const line of lines) {
@@ -377,7 +369,17 @@
                 
                 if (cleaned.length < 2) continue;
                 
-                if (skipPatterns.some(pattern => pattern.test(cleaned))) continue;
+                // Remove special characters and symbols early
+                cleaned = cleaned.replace(/[®°©¢»"=™£©\)\(&@%]/g, '').trim();
+                // Remove leading symbols and numbers (like 2%, &, etc.)
+                cleaned = cleaned.replace(/^[^a-zA-Z]+/g, '').trim();
+                // Remove trailing 0 from names
+                cleaned = cleaned.replace(/\s+0$/g, '').trim();
+                
+                if (skipPatterns.some(pattern => pattern.test(cleaned))) {
+                    console.log('Skipped by pattern:', line);
+                    continue;
+                }
                 
                 if (skipWords.includes(cleaned.toLowerCase())) continue;
                 
@@ -403,21 +405,66 @@
                 
                 if (cleaned.match(/^\d+$/)) continue;
                 
+                // Remove (you) pattern from names - handle "(you)", "You (Name)", and "You Name"
+                cleaned = cleaned.replace(/\(you\)/gi, '').trim();
+                cleaned = cleaned.replace(/^you\s*\(/gi, '').replace(/\)$/g, '').trim();
+                // Remove "You " prefix (without parentheses)
+                cleaned = cleaned.replace(/^you\s+/gi, '').trim();
+                
+                // Remove trailing "Sir", "Bro", or "Info" from names
+                cleaned = cleaned.replace(/\s+(sir|bro|info)$/gi, '').trim();
+                
+                // Remove trailing single letters (like "I", "P", etc.) and apostrophes
+                cleaned = cleaned.replace(/\s+[a-zA-Z]$/g, '').trim();
+                cleaned = cleaned.replace(/['\u2019]+$/g, '').trim();
+                
+                // Remove leading junk words (like "wy", "ed", "kad", etc.)
+                cleaned = cleaned.replace(/^(wy|ed|kad)\s+/gi, '').trim();
+                
                 cleaned = cleaned.replace(ocrArtifacts, '').trim();
                 
                 if (cleaned.length < 2) continue;
                 
-                if (!/[a-zA-Z]{2,}/.test(cleaned)) continue;
+                if (!/[a-zA-Z]{2,}/.test(cleaned)) {
+                    console.log('Skipped - not enough letters:', line);
+                    continue;
+                }
                 
                 const wordCount = cleaned.split(/\s+/).filter(w => w.length > 0).length;
                 if (wordCount === 0) continue;
+                
+                // Skip if too many spaces relative to text (junk like "w  O - 3 alll T")
+                const spaceCount = (cleaned.match(/\s/g) || []).length;
+                const charCount = cleaned.replace(/\s/g, '').length;
+                if (spaceCount > charCount * 0.5) {
+                    console.log('Skipped - too many spaces:', line, '-> cleaned:', cleaned);
+                    continue;
+                }
+                
+                // Skip if contains single-letter words (except valid initials like "D" in "Prabin D Karki")
+                const words = cleaned.split(/\s+/).filter(w => w.length > 0);
+                const singleLetterWords = words.filter(w => w.length === 1);
+                if (singleLetterWords.length > 1) {
+                    console.log('Skipped - too many single letters:', line, '-> cleaned:', cleaned);
+                    continue;
+                }
                 
                 // Allow 2-letter names (like 'SD') or names with at least 3 letters
                 const letterCount = (cleaned.match(/[a-zA-Z]/g) || []).length;
                 const isTwoLetterName = cleaned.length === 2 && letterCount === 2;
                 const hasEnoughLetters = letterCount >= 3 || isTwoLetterName;
-                if (!hasEnoughLetters) continue;
+                if (!hasEnoughLetters) {
+                    console.log('Skipped - not enough letters after cleaning:', line, '-> cleaned:', cleaned);
+                    continue;
+                }
                 
+                // Skip very short fragments (like "nfo" from "Info")
+                if (cleaned.length < 3 && !isTwoLetterName) {
+                    console.log('Skipped - too short:', line, '-> cleaned:', cleaned);
+                    continue;
+                }
+                
+                console.log('Extracted name:', cleaned, 'from line:', line);
                 names.push(cleaned);
             }
             
@@ -430,6 +477,8 @@
             const seenNames = new Set();
             const phonePattern = /^\+?\d{10,}$/;
             
+            console.log('Removing duplicates from:', names);
+            
             for (const name of names) {
                 // Check if it's a phone number
                 const cleanedPhone = name.replace(/[\s\-\(\)]/g, '');
@@ -441,9 +490,13 @@
                 if (!seenNames.has(normalized) && normalized.length > 0) {
                     seenNames.add(normalized);
                     uniqueNames.push(name);
+                    console.log('Added unique name:', name, '(normalized:', normalized + ')');
+                } else {
+                    console.log('Skipped duplicate:', name, '(normalized:', normalized + ')');
                 }
             }
             
+            console.log('Unique names after deduplication:', uniqueNames);
             return uniqueNames;
         }
 
@@ -493,60 +546,49 @@
                 const cleanExtracted = extractedName.toLowerCase().replace(/[^a-z\s]/g, '').trim();
                 console.log('Trying to match:', extractedName, '-> cleaned:', cleanExtracted);
                 let found = false;
+                let bestMatch = null;
+                let bestMatchScore = 0;
                 
                 for (const player of playersData) {
-                    const cleanPlayer = player.name.toLowerCase().replace(/[^a-z\s]/g, '').trim();
+                    // Check main name and all aliases
+                    const namesToCheck = [player.name, ...(player.aliases || [])];
+                    let matchedName = null;
                     
-                    if (cleanPlayer === cleanExtracted) {
-                        matched.push(player);
-                        found = true;
-                        break;
-                    }
-                    
-                    if (cleanPlayer.includes(cleanExtracted) || cleanExtracted.includes(cleanPlayer)) {
-                        matched.push(player);
-                        found = true;
-                        break;
-                    }
-                    
-                    const extractedParts = cleanExtracted.split(/\s+/).filter(p => p.length > 0);
-                    const playerParts = cleanPlayer.split(/\s+/).filter(p => p.length > 0);
-                    
-                    let matchCount = 0;
-                    for (const part of extractedParts) {
-                        for (const pPart of playerParts) {
-                            // Match if parts are similar (contains, starts with, or first letter + period)
-                            if (part.length >= 2 && pPart.length >= 2) {
-                                if (pPart.includes(part) || part.includes(pPart)) {
-                                    matchCount++;
-                                    break;
-                                }
-                                // Match "Madan" with "Maddan" (similar spelling)
-                                if (part.length >= 3 && pPart.length >= 3) {
-                                    const similarity = Math.max(part.length, pPart.length) - levenshteinDistance(part, pPart);
-                                    if (similarity / Math.max(part.length, pPart.length) >= 0.7) {
-                                        matchCount++;
-                                        break;
-                                    }
-                                }
-                            }
-                            // Match "Pun" with "P." or "P" (initial)
-                            if (part.length >= 2 && pPart.length <= 2 && part[0] === pPart[0]) {
-                                matchCount++;
+                    for (const nameVariation of namesToCheck) {
+                        const cleanPlayer = nameVariation.toLowerCase().replace(/[^a-z\s]/g, '').trim();
+                        
+                        // Exact match - highest priority
+                        if (cleanPlayer === cleanExtracted) {
+                            console.log('Exact match found:', extractedName, '->', player.name, '(via alias:', nameVariation + ')');
+                            matched.push(player);
+                            found = true;
+                            matchedName = nameVariation;
+                            break;
+                        }
+                        
+                        const extractedParts = cleanExtracted.split(/\s+/).filter(p => p.length > 0);
+                        const playerParts = cleanPlayer.split(/\s+/).filter(p => p.length > 0);
+                        
+                        // If extracted is just first name, match if first names are identical
+                        if (extractedParts.length === 1 && playerParts.length >= 1) {
+                            if (extractedParts[0] === playerParts[0]) {
+                                console.log('First name match found:', extractedName, '->', player.name, '(via alias:', nameVariation + ')');
+                                matched.push(player);
+                                found = true;
+                                matchedName = nameVariation;
                                 break;
                             }
                         }
                     }
                     
-                    if (matchCount > 0 && matchCount >= Math.min(extractedParts.length, playerParts.length) * 0.6) {
-                        matched.push(player);
-                        found = true;
-                        break;
-                    }
+                    if (found) break;
                 }
                 
                 if (!found) {
+                    console.log('No match found for:', extractedName);
                     unmatched.push(extractedName);
+                } else {
+                    console.log('Successfully matched:', extractedName);
                 }
             }
             
